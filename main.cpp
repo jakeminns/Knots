@@ -121,7 +121,6 @@ for(int x = 0; x< 3;x++){
 			board_temp[x][y] = player;
 			score = minimax_value(board_temp,score,player*-1, depth);
 			board_temp[x][y] = 0;
-			cout << x<< "  " << y << "   " << score<< endl;
 
 		if(score>score_store){
 
@@ -134,10 +133,8 @@ for(int x = 0; x< 3;x++){
 		}
 	}
 }
-		cout << move_play[0] <<"  "<< move_play[1] <<endl;
 
 board[move_play[0]][move_play[1]] = -1;
-		cout << "d2" <<endl;
 
 return 0;
 }
